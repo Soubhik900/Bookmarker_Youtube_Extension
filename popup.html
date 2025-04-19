@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Timestamp Bookmarker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Bookmarks</h1>
+      <button id="add-bookmark" class="btn btn-primary">Add Current Time</button>
+    </header>
+    
+    <div class="current-video-info">
+      <h2 id="video-title">Video Title</h2>
+      <p id="video-url">URL: <a href="#" id="video-link" target="_blank">Open video</a></p>
+    </div>
+    
+    <div class="bookmarks-container">
+      <div id="no-bookmarks-message" class="hidden">
+        No bookmarks for this video yet. Click "Add Current Time" to create one.
+      </div>
+      
+      <ul id="bookmarks-list"></ul>
+    </div>
+    
+    <div class="controls">
+      <button id="clear-all" class="btn btn-danger">Clear All Bookmarks</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
